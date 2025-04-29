@@ -6,10 +6,16 @@ const initialState = { counter: 0 };
 function counterReducer(state, { type: actionType }) {
   switch (actionType) {
     case "INCREMENT_COUNTER": {
-      return { counter: state.counter + 1 };
+      return {
+        ...state,
+        counter: state.counter + 1,
+      };
     }
     case "DECREMENT_COUNTER": {
-      return { counter: state.counter - 1 };
+      return {
+        ...state,
+        counter: state.counter - 1,
+      };
     }
     case "RESET_COUNTER": {
       return initialState;
