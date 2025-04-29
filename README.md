@@ -1,2 +1,2 @@
 # REACT-useReducer-problems
-A pile of react problems solved using useReducer.
+A pile of react problems solved using useReducer().
