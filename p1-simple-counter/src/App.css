@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  width: 60rem;
+  font-size: 1.8rem;
+  user-select: none;
+  margin: 3rem 0 0 3rem;
+}
+
+section {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+button {
+  padding: .4em .7em;
+  font-size: inherit;
+}
+
+button:hover {
+  opacity: .75;;
+}
+
+section div > button {
+  width: 7rem;
+  height: 5rem;
+  background-color: #888;
+}
+
+section div {
+  font-size: 2.3rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+section > button {
+  background-color: #555;
+  border: none;
+  font-size: 1.5rem;
+  visibility: hidden;
+}
+
+section:hover > button{
+  visibility: visible;
+}
