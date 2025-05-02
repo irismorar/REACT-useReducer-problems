@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  width: 60rem;
+  margin: 0 auto;
+  user-select: none;
+  font-size: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin: 1em 0 2em 0;
+}
+
+section {
+  text-align: center;
+}
+
+section > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5em;
+}
+
+button {
+  font-size: inherit;
+  padding: .5rem .8rem;
+  width: 10rem;
+}
+
+button[data-isactive="true"] {
+  background-color: lightblue;
+  color: #222;
+}
+
+section > p {
+  letter-spacing: .4rem;
+}
+
+section > p > span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
