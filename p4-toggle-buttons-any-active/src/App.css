@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+main {
+  width: 60rem;
+  user-select: none;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 3em;
+}
+
+button {
+  font-size: 3rem;
+  padding: .25em .6em;
+}
+
+button[data-isactive="true"] {
+  background-color: lightblue;
+  color: #222;
+}
