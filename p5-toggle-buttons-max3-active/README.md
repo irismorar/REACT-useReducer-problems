@@ -1,12 +1,13 @@
-# React + Vite
+**TOGGLE MAX 3 BUTTONS**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The application has seven buttons next to each other called "A", "B", "C", "D", "E", "F" and "G".
 
-Currently, two official plugins are available:
+At any time, a maximum of three buttons can be "on" and the rest of the buttons must be "off". It is always possible, of course, for less than three buttons to be "on".
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+When the user presses a button, that button gets toggled:
 
-## Expanding the ESLint configuration
+if it is "on" it becomes "off"
+if it is "off" it becomes "on", but only if making it "on" does not result in more than the maximum number of buttons (3) being "on"! If making it on would result in more than three buttons being "on" then the button stays "off".
+The buttons that are "on" have a background color of blue. The buttons that are "off" have a backgound color of gray.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Initially, all the buttons are "off".
